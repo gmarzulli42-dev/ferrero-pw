@@ -50,7 +50,7 @@ git clone https://github.com/tuo-username/ferrero-sostenibilita-pw.git
 
 ## Demo online
 
-Puoi visionare una demo del progetto su [GitHub Pages](#) *(inserisci qui il link quando pubblicato)*
+Puoi visionare una demo del progetto su [GitHub Pages](https://gmarzulli42-dev.github.io/ferrero-pw/)
 
 ---
 
