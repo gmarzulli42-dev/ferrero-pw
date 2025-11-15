@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ferrero - Dashboard Sostenibilità</title>
+  <link rel="stylesheet" href="ferrero-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <div class="ferrero-logo-only">
+    <a href="https://www.ferrerosustainability.com/" aria-label="Logo Ferrero - Torna alla homepage" target="_blank" class="logo-link">
+      <img src="img/logo-ferrero.svg" alt="Logo Ferrero" class="logo-img">
+    </a>
+  </div>
+  <div class="ferrero-header-hero">
+    <h1 class="ferrero-title">Dashboard Sostenibilità Ferrero</h1>
+    <p class="ferrero-subtitle">Indicatori ambientali, sociali e di governance</p>
+  </div>
+</header>
+  <main>    
+    <div class="slider-container">
+      <h3 class="label-gold">Seleziona l'anno di interesse</h3>
+      <label for="year-slider">Anno:</label>
+      <input type="range" id="year-slider" min="2020" max="2024" value="2024" step="1">
+      <span id="selected-year">2024</span>
+    </div>
+      
+    <section class="ferrero-downloads">
+      <h2 class="label-gold">Scarica i report ufficiali Ferrero</h2>
+      <ul class="report-list" id="download-list"></ul>
+    </section>
+
+    <section class="ferrero-dashboard">
+      <h2 class="label-gold">KPI di sostenibilità Ferrero</h2>
+      <!-- KPI Ambiente -->
+      <h3 class="kpi-category">🌎 Ambiente</h3>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+		  <img src="https://img.icons8.com/ios-filled/50/5d3a00/wind.png" alt="CO2 Icon" class="icon">
+          <h3>Emissioni CO<sub>2</sub><span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Emissioni Scope 1 + Scope 2 (ton CO<sub>2</sub>eq).</span></span></h3>
+          <p id="co2">--</p>
+        </div>
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios/50/5d3a00/solar-panel--v1.png" alt="Energia rinnovabile" class="icon">
+          <h3>% Energia rinnovabile<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Percentuale energia elettrica proveniente da fonti rinnovabili.</span></span></h3>
+          <p id="renewable">--</p>
+        </div>
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios-glyphs/64/5d3a00/waste.png" alt="Rifiuti" class="icon">
+          <h3>Rifiuti prodotti<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Rifiuti totali prodotti (tonnellate).</span></span></h3>
+          <p id="rifiuti">--</p>
+        </div>
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/5d3a00/external-recycle-ecology-flatart-icons-outline-flatarticons.png" alt="Riciclo" class="icon">
+          <h3>% Rifiuti riciclati<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Percentuale di rifiuti avviati a riciclo.</span></span></h3>
+          <p id="riciclo">--</p>
+        </div>
+      </div>
+      <!-- KPI Sociali -->
+      <h3 class="kpi-category">🧑‍🤝‍🧑 Sociale</h3>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios-filled/64/5d3a00/conference-call.png" alt="Dipendenti" class="icon">
+          <h3>Dipendenti totali<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Numero di dipendenti Ferrero a livello globale.</span></span></h3>
+          <p id="dipendenti">--</p>
+        </div>
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios-filled/50/5d3a00/businesswoman.png" alt="Donne manager" class="icon">
+          <h3>% Donne manager<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Percentuale di donne in ruoli manageriali.</span></span></h3>
+          <p id="donne_manager">--</p>
+        </div>
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios/64/5d3a00/training.png" alt="Formazione" class="icon">
+          <h3>Ore formazione<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Ore totali di formazione erogate.</span></span></h3>
+          <p id="formazione">--</p>
+        </div>
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios/64/5d3a00/heart-with-pulse--v1.png" alt="LTIFR" class="icon">
+          <h3>Tasso infortuni LTIFR<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Infortuni per milione di ore lavorate.</span></span></h3>
+          <p id="ltifr">--</p>
+        </div>
+      </div>
+      <!-- KPI Governance -->
+      <h3 class="kpi-category">🏛️ Governance</h3>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <img src="https://img.icons8.com/ios-filled/50/5d3a00/conference.png" alt="CdA donne" class="icon">
+          <h3>% Donne in CdA<span class="tooltip" tabindex="0">ⓘ<span class="tooltiptext">Percentuale di presenza femminile nel Consiglio di Amministrazione.</span></span></h3>
+          <p id="donne_cda">--</p>
+        </div>
+      </div>
+    </section>   
+  </main>
+ 
+  <footer>
+    <p>Contatti: <a href="mailto:nome.cognome@email.it">nome.cognome@email.it</a></p>
+    <p><a href="https://www.ferrerosustainability.com/" target="_blank">Archivio ufficiale Ferrero</a></p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
